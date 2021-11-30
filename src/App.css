@@ -86,9 +86,10 @@ svg {
 }
 .card__info {
     background: red;
-    place-items: flex-end;
     display: flex;
+    place-content: flex-end;
     flex-flow: column nowrap;
+    margin: 10px;
 }
 .card__name {
     display: flex;
@@ -103,6 +104,6 @@ svg {
     font-weight: 400;
     color: black;
 }
-.title {
-
+.card__gender {
+    background: white;
 }

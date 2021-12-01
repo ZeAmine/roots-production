@@ -1,0 +1,11 @@
+.cards__list {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.cards_list_container {
+  display: grid;
+  grid-template-columns: repeat(5, 268px);
+  grid-gap: 1.5rem 0;
+}

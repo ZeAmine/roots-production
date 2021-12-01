@@ -1,0 +1,24 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_connect{
+    border : 1px solid #000000;
+    color: #000000;
+    border-radius: 50px;
+    padding: 10px 20px 9px;
+    font-family: 'Epilogue', sans-serif;
+
+}
+
+.button_connect:hover{
+    transition-duration: 450ms;
+    background-color:#FA7921
+}
+
+.header_logo{
+    width: 213px;
+}

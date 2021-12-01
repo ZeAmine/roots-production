@@ -1,0 +1,20 @@
+
+
+.content_welcome{
+    margin-top: 55px;
+    background-image: url("./gray_vector.svg");
+    background-size: contain;
+    height: 100%;
+    width: 100% ;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center; */
+}
+
+.title_artist{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 100px;
+    line-height: 102px;
+    text-transform: uppercase;
+    text-align: center;
+}

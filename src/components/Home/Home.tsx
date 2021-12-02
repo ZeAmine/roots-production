@@ -1,13 +1,13 @@
-import React from 'react';
-import Card from "../Card/Card";
-import "./Home.css"
+import React from "react";
+import "./Home.css";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
-    return (
-        <div className="home">
-            <Card/>
-        </div>
-    );
+  return (
+    <div className="home">
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

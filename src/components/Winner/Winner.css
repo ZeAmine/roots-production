@@ -1,0 +1,206 @@
+.winner__wrap {
+  width: 100%;
+  height: 800px;
+}
+
+.winner_block {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center;
+  place-items: center;
+  width: inherit;
+  height: 750px;
+  border-top: 2px solid var(--clr-primary-2);
+  border-bottom: 2px solid var(--clr-primary-2);
+  overflow: hidden;
+}
+
+.winner_img_container {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.winner__img {
+  filter: brightness(70%);
+}
+
+/*----------Symbol*/
+.winner__symbol {
+  display: flex;
+  flex-flow: column nowrap;
+  place-items: center;
+  width: 230px;
+  height: auto;
+}
+
+.winner_symbol_list {
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center;
+  place-items: flex-end;
+  width: inherit;
+  height: inherit;
+}
+.winner_symbol_list li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.winner_symbol_item {
+  width: 30px;
+  height: auto;
+}
+
+.winner_symbol_brand .cl {
+  fill: lightgray;
+}
+
+.winner_symbol_item.big {
+  width: 40px;
+  height: auto;
+}
+
+.winner_symbol_text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-primary-3);
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.winner_block_info {
+  position: relative;
+  display: flex;
+  place-content: center;
+  background-color: lightcoral;
+}
+/*-----------Name*/
+.winner_block_name {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+.winner__name {
+  font-family: var(--font-primary-2);
+  font-size: 10rem;
+  font-weight: 600;
+  color: var(--clr-primary-3);
+  line-height: 7.5rem;
+}
+.winner__name.stroke {
+  -webkit-text-stroke: 2px lightgray;
+  color: transparent;
+}
+
+/*-----------Band*/
+.winner__band {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  border-top: 2px solid var(--clr-primary-2);
+  background-color: var(--clr-primary-1);
+  overflow: hidden;
+}
+
+.winner_band_container {
+  padding: 1rem 0;
+  white-space: nowrap;
+  animation: marquee 15s infinite linear;
+}
+
+.winner_band_container h3 {
+  font-family: var(--font-primary-2);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--clr-primary-2);
+}
+
+.winner_band_container h3:before {
+  content: attr(data-text);
+  padding-right: 0.5rem;
+}
+.winner_band_container h3:after {
+  content: attr(data-text);
+  padding: 0 0.5rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*----------ButtonSocial*/
+.winner__social {
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center;
+  background-color: red;
+}
+
+.cercle__btn.spotify,
+.cercle__btn.instagram {
+  background-color: var(--clr-primary-3);
+}
+
+.cercle__btn.instagram,
+.cercle__btn.spotify {
+  height: 60px;
+}
+
+.cercle__btn.spotify {
+  position: absolute;
+  top: 28%;
+  right: 20%;
+}
+
+.cercle__btn.instagram {
+  position: absolute;
+  top: 38%;
+  right: 20%;
+}
+
+.cercle_btn_container.instagram,
+.cercle_btn_container.spotify {
+  width: 28px;
+  height: auto;
+}
+
+/*-------Scroll*/
+.winner__scroll {
+  display: flex;
+  place-content: flex-end;
+  place-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.winner_scroll_container {
+  display: inline-flex;
+  place-items: center;
+  height: 100%;
+  padding: 2rem 5rem;
+  cursor: pointer;
+}
+.winner_scroll_text {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--clr-primary-2);
+  padding-right: 1.25rem;
+}
+
+.winner_scroll_img {
+  width: 24px;
+  height: 24px;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,75 @@
+.marquee__wrap {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee__container {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee__text {
+  display: inline-flex;
+  place-items: center;
+  transform: translateX(-15%);
+  animation: marquee 500s infinite linear;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee__text.normal_X2 {
+  transform: translateX(-10%);
+  animation: marquee 500s infinite linear;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee__text.reverse {
+  transform: translateX(-5%);
+  animation: marquee_reverse 500s infinite linear;
+}
+@keyframes marquee_reverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+.marquee__text.reverse_X2 {
+  transform: translateX(-8%);
+  animation: marquee_reverse 500s infinite linear;
+}
+@keyframes marquee_reverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+.marquee__text h3 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: var(--clr-primary-3);
+  line-height: 8rem;
+}

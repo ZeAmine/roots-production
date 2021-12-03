@@ -1,13 +1,11 @@
 import React from "react";
-import Winner from "../Winner/Winner";
-import Cards from "../Cards/Cards";
+import Marquee from "../Marquee/Marquee";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home">
-      <Winner />
-      <Cards />
+        <Marquee/>
     </div>
   );
 };

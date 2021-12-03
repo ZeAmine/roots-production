@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   height: 600px;
+  background-color: var(--clr-bg-2);
 }
 
 .footer__wrap {
@@ -15,7 +16,7 @@
 .footer__start {
   display: flex;
   place-items: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .footer__links {
@@ -28,7 +29,7 @@
 
 .footer__links h4 {
   font-family: "Clash Grotesk", sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 600;
   color: black;
 }
@@ -36,13 +37,18 @@
 .footer_links_list {
   display: flex;
   place-items: center;
-  font-family: "Epilogue", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
   color: black;
   padding-top: 1rem;
 }
 
-.footer_links_list li {
+.footer_links_item a {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--clr-primary-2);
   margin-right: 2rem;
+}
+
+.footer__end {
+  margin-bottom: 2rem;
 }

@@ -4,7 +4,7 @@
   place-items: flex-start;
   width: 100%;
   height: 400px;
-  background-color: #fc480e;
+  background-color: var(--clr-primary-1);
   border: 2px solid black;
 }
 
@@ -62,7 +62,7 @@
   padding: 1rem 3rem;
   border: 2px solid black;
   border-radius: 50px;
-  background-color: #fc480e;
+  background-color: var(--clr-primary-1);
   cursor: pointer;
   transition: all 200ms ease-out;
 }

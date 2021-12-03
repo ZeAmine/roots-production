@@ -10,7 +10,7 @@
   place-content: center;
   place-items: center;
   width: inherit;
-  height: 750px;
+  height: 740px;
   border-top: 2px solid var(--clr-primary-2);
   border-bottom: 2px solid var(--clr-primary-2);
   overflow: hidden;
@@ -111,7 +111,16 @@
 .winner_band_container {
   padding: 1rem 0;
   white-space: nowrap;
-  animation: marquee 15s infinite linear;
+  transform: translateX(-10%);
+  animation: marquee 80s infinite linear;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60%);
+  }
 }
 
 .winner_band_container h3 {
@@ -125,18 +134,10 @@
   content: attr(data-text);
   padding-right: 0.5rem;
 }
+
 .winner_band_container h3:after {
   content: attr(data-text);
   padding: 0 0.5rem;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 /*----------ButtonSocial*/
@@ -160,13 +161,13 @@
 .cercle__btn.spotify {
   position: absolute;
   top: 28%;
-  right: 20%;
+  right: 18%;
 }
 
 .cercle__btn.instagram {
   position: absolute;
   top: 38%;
-  right: 20%;
+  right: 18%;
 }
 
 .cercle_btn_container.instagram,

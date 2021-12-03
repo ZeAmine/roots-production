@@ -136,8 +136,8 @@ const Winner = () => {
           </div>
           <div className="winner__band">
             <div className="winner_band_container">
-              <h3 data-text="LE VAINQUEUR DE LA SEMAINE * LE VAINQUEUR DE LA SEMAINE *">
-                LE VAINQUEUR DE LA SEMAINE * LE VAINQUEUR DE LA SEMAINE *
+              <h3 data-text="LE VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE •">
+                LE VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE •
               </h3>
             </div>
           </div>

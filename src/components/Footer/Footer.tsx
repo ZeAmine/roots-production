@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer__wrap container">
         <div className="footer__start">
           <div className="footer__links">
-            <h4>RESEAUX</h4>
+            <h4>RÉSEAUX</h4>
             <ul className="footer_links_list">
               <li className="footer_links_item">
                 <a href="/">Twitter</a>
@@ -21,7 +21,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__links">
-            <h4>A PROPOS</h4>
+            <h4>À PROPOS</h4>
             <ul className="footer_links_list">
               <li className="footer_links_item">
                 <a href="/">Mentions légales</a>
@@ -34,11 +34,16 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="footer__btn">
+            <button className="footer__btn">
+              <h1>Button</h1>
+            </button>
+          </div>
         </div>
         <div className="footer__end">
           <a href="/">
             <img
-              src={process.env.PUBLIC_URL + "assets/imgs/logo2.svg"}
+              src={process.env.PUBLIC_URL + "assets/icons/logo2.svg"}
               alt="logo"
             />
           </a>

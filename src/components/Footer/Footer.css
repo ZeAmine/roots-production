@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  height: 600px;
+}
+
+.footer__wrap {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__start {
+  display: flex;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.footer__links {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center;
+  margin-right: 10rem;
+}
+
+.footer__links h4 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+}
+
+.footer_links_list {
+  display: flex;
+  place-items: center;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  padding-top: 1rem;
+}
+
+.footer_links_list li {
+  margin-right: 2rem;
+}

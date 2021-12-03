@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.css";
-import Newsletter from "../Newsletter/Newsletter";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
     <div className="home">
-      <Newsletter />
+      <Footer />
     </div>
   );
 };

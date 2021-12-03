@@ -1,20 +1,178 @@
-
-
+body{
+    background-color: #F4F4F4;
+}
+/* body .body-welcome{
+    margin-top: 15vh;
+} */
 .content_welcome{
-    margin-top: 55px;
-    background-image: url("./gray_vector.svg");
+    margin: 0 auto;
+    position: relative;
+    background-image: url("./img/gray_vector.svg");
     background-size: contain;
-    height: 100%;
-    width: 100% ;
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% ;
+    height: 44vw;
+    z-index: 0;
 }
 
 .title_artist{
     font-family: 'Epilogue', sans-serif;
-    font-size: 100px;
-    line-height: 102px;
+    font-size: 6rem;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 750px;
+    height: 345px;
+    transform: translateZ(60px)
+}
+
+.title_artist div:not(:nth-child(1)) {
+    margin-top: 24px;
+}
+
+.title_artist span:not(.italic){
+    padding: 20px 20px 2px;
+    background: #F4F4F4;
+    border: 2px solid #000000;
+    border-radius:5px;
+}
+
+.italic{
+    font-style: italic;
+    text-shadow: 2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000, -2px 2px 0 #000000, -2px 0 0 #000000, -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000;
+    color: #F4F4F4;
+}
+
+.albums{
+    width: 90%;
+}
+
+.first-row{
+    display: flex;
+    padding-left: 70px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.second-row {
+    padding-top: 30px;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.XXIVAlbum{
+    width:13rem;
+}
+
+
+.platypusAlbum{
+    width:16rem;
+}
+
+.faceAlbum{
+    width:15rem;
+    padding-bottom: 30px;
+}
+
+.donutAlbum{
+    padding-top: 20px;
+    /* padding-left:50px; */
+    width:12rem;
+}
+.arrow{
+    z-index: 1;
+    width: 2.3vw;
+}
+
+.progress{
+    overflow: hidden;
+    height: 8vw;
+    width: 8vw;
+    border: solid 2px #000000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 46px;
+    right: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave {
+    background: url(./img/wave.svg) repeat-x; 
+    background-position: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: 0;
+    bottom:0;
+    width: 984.21pt;
+    height: 31px;
+    animation: wave 21s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -984.21pt;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+}
+
+.parallax-effect-img {
+    width: 10rem;
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px); */
+    background-image: url('./img/purple_rectangle_small.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.parallax-effect-img2 {
+    width: 14rem;
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px); */
+    background-image: url('./img/pink_rectangle_medium.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.parallax-effect-img3{
+    width: 10rem;
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px); */
+    background-image: url('./img/pink_rectangle_medium.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.parallax-effect-img4{
+    width: 8rem;
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px); */
+    background-image: url('./img/purple_rectangle_medium.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.inner-element {
+    display: flex;
+    flex-direction: column;
+    transform: translateZ(60px);
+    z-index: -2;
 }

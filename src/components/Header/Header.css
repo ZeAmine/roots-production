@@ -1,17 +1,29 @@
-
 .header{
+    background-color: #F4F4F4;
+    margin: 0;
+    padding:20px;
+    width:100%;
+    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+
+}
+.login_button{
+    width: 12rem;
 }
 
 .button_connect{
-    border : 1px solid #000000;
+    border : 2px solid #000000;
     color: #000000;
     border-radius: 50px;
-    padding: 10px 20px 9px;
+    padding: 10px 20px;
     font-family: 'Epilogue', sans-serif;
-
+    font-weight: 500; 
 }
 
 .button_connect:hover{
@@ -19,6 +31,10 @@
     background-color:#FA7921
 }
 
+.button_connect:active{
+    font-weight: 600;
+}
+
 .header_logo{
-    width: 213px;
+    width: 12rem;
 }

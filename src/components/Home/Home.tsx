@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../Header/Header";
 import Welcome from '../Welcome/Welcome';
+import Mouse from '../Mouse/Mouse';
 import Card from "../Card/Card";
 import "./Home.css"
 
@@ -11,6 +12,7 @@ const Home = () => {
         <div className="home">
             <Header/>
             <Welcome/>
+
             {/* <Card/> */}
         </div>
     );

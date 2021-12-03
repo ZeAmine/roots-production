@@ -1,11 +1,11 @@
 import React from "react";
-import Marquee from "../Marquee/Marquee";
 import "./Home.css";
+import Newsletter from "../Newsletter/Newsletter";
 
 const Home = () => {
   return (
     <div className="home">
-        <Marquee/>
+      <Newsletter />
     </div>
   );
 };

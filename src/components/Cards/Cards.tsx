@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import ListCard from "../ListCard/ListCard";
-import { getCards } from "../../api/index";
-import { ICardItems, ICards } from "../../decl";
+import { ICardItem, ICards } from "../../decl";
 import "./Cards.css";
 
 export interface CardsProps {
@@ -15,8 +14,14 @@ const Cards = ({ cards }: CardsProps) => {
         <div className="section__title">
           <h1>{cards?.title}</h1>
         </div>
-        {cards?.items.map((card: any) => {
-          <ListCard key={card.id} {...card} />;
+        {cards?.items.map((card: ICardItem) => {
+          <ListCard
+            key={card.id}
+            id={card.id}
+            img={card.img}
+            gender={card.gender}
+            name={card.name}
+          />;
         })}
         {/*<div className="cards__list">*/}
         {/*  <div className="cards_list_container">*/}

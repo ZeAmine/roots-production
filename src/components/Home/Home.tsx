@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Cards from "../Cards/Cards";
-import { ICardItems, ICards } from "../../decl";
+import { ICards } from "../../decl";
 import { getCards } from "../../api";
 import "./Home.css";
 
@@ -15,8 +14,8 @@ const Home = () => {
   const fetchCards = async () => {
     const cardsPages = await getCards();
     setAppCards({ cards: cardsPages });
+    console.log(appCards);
   };
-  console.log(appCards);
 
   useEffect(() => {
     fetchCards();
@@ -24,7 +23,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Cards cards={appCards} />
+      <Cards cards={appCards?.cards} />
     </div>
   );
 };

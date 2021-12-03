@@ -53,9 +53,9 @@ svg {
 :root {
   --clr-primary-1: #fa7921;
   --clr-primary-2: black;
-  --clr-primary-3: white;
+  --clr-primary-3: #f4f4f4;
   --clr-bg: #8185dc;
-  --clr-bg-2: pink;
+  --clr-bg-2: #f5dbdb;
 
   --font-primary-1: Epilogue, sans-serif;
   --font-primary-2: Clash Grotesk, sans-serif;

@@ -17,7 +17,7 @@
   display: inline-flex;
   place-items: center;
   transform: translateX(-15%);
-  animation: marquee 500s infinite linear;
+  animation: marquee 500s infinite reverse linear;
 }
 @keyframes marquee {
   from {
@@ -30,14 +30,14 @@
 
 .marquee__text.normal_X2 {
   transform: translateX(-10%);
-  animation: marquee 500s infinite linear;
+  animation: marquee 500s infinite reverse linear;
 }
 @keyframes marquee {
   from {
-    transform: translateX(-80%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(-60%);
   }
 }
 
@@ -68,8 +68,9 @@
 }
 
 .marquee__text h3 {
+  font-family: "Clash Grotesk", sans-serif;
   font-size: 8rem;
   font-weight: 600;
-  color: var(--clr-primary-3);
+  color: var(--clr-primary-2);
   line-height: 8rem;
 }

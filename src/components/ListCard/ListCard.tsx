@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
+import { useGlobalContext } from "../../context";
+import { ICardItems, ICards } from "../../decl";
 import "./ListCard.css";
 
-const ListCard = () => {
+export interface CardsProps {
+  cards: ICards | undefined;
+}
+const ListCard: React.FC<CardsProps> = () => {
   const [likeActive, setLikeActive] = useState<boolean>(false);
   const [slideBtnLike, setSlideBtnLike] = useState<boolean>(false);
 
@@ -64,7 +69,6 @@ const ListCard = () => {
             ) : null}
           </div>
         )}
-
         <div className="card__gender">
           <div className="card_gender_container">
             <p>HIP-HOP * TRAP * CLOUD RAP * RNB * DRILL</p>

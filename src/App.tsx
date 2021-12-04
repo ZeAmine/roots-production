@@ -4,10 +4,12 @@ import Artist from "./pages/Artist/Artist";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import React from "react";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path={"/artist"} element={<Artist />} />

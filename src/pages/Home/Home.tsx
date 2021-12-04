@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Welcome from "../../components/Welcome/Welcome";
+import Winner from "../../components/Winner/Winner";
 import ListCard from "../../components/ListCard/ListCard";
 import Marquee from "../../components/Marquee/Marquee";
-import Winner from "../../components/Winner/Winner";
 import Newsletter from "../../components/Newsletter/Newsletter";
 import { getCards } from "../../api";
 import { ICards } from "../../decl";
@@ -26,7 +27,7 @@ const Home = () => {
   return (
     <main className="home">
       <div className="home__wrap">
-        {/*Home*/}
+        <Welcome />
         <Winner />
         <ListCard cards={appCards?.cards} />
         <Marquee />

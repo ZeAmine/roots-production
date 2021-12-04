@@ -16,8 +16,8 @@ const Home = () => {
             <Header/>
             <Welcome/>
             <Presentation/>
-            {/* <Legal_Mention/> */}
-            {/* <Cookies_Politics/> */}
+            <Legal_Mention/>
+            <Cookies_Politics/>
         </div>
     );
 };

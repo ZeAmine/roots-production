@@ -65,9 +65,6 @@ const Cookies_Politics = () => {
                     </p>
                 </div>
             </div>
-            {/* <div className="star_back">
-                <img src={process.env.PUBLIC_URL + "assets/imgs/star_back.svg"} alt='starsCookie' className="stars"/>
-            </div> */}
         </div>
     
     );

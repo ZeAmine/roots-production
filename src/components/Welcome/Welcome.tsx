@@ -4,25 +4,30 @@ import Tilt from 'react-parallax-tilt';
 
 const Welcome = () => {
 const img = useRef(null)
-const [wave, setWave] = useState(false);
-let waveValue = 0;
+// const [wave, setWave] = useState(false);
+// let waveValue = 0;
 
-waveValue = (window.scrollY/10);
-console.log(waveValue)
-const str = waveValue.toString();
-const changeWave = () =>{
-    if(window.scrollY >=80) {
-        setWave(true);
-    } else {
-        setWave(false);
-    }
-}
+// waveValue = (window.scrollY/10);
+// console.log(waveValue)
+// const str = waveValue.toString();
+// const changeWave = () =>{
+//     if(window.scrollY >=80) {
+//         setWave(true);
+//     } else {
+//         setWave(false);
+//     }
+// }
 
-window.addEventListener('scroll', changeWave)
+// window.addEventListener('scroll', changeWave)
 
     return (
         <body className="body-welcome">
              <div className="content_welcome">
+
+{/* ###
+                    Title
+### */}
+
                 <div className="title_artist">
                     <Tilt tiltReverse={true}
                         className="track-on-window"
@@ -42,8 +47,12 @@ window.addEventListener('scroll', changeWave)
                             <span>préféré</span>
                         </div>
                     </Tilt>
-                </div>  
-                                    
+                </div>
+
+{/* ###
+                    Albums   
+### */}
+
                 <div className="albums inner-element">
                     <div className="first-row">
                     <Tilt tiltReverse={true}
@@ -93,12 +102,17 @@ window.addEventListener('scroll', changeWave)
                      </Tilt>
                     </div>
                 </div>
+
+{/* ###
+                    Button 
+### */}
+
                 <a className="progress" href="#anchor">
                     <div className="waves_button">
                         <div className="wave"
-                         style={{
-                            height: wave ? `${(85 + str)}%`: "85px"
-                        }}
+                        //  style={{
+                        //     height: wave ? `${(85 + str)}%`: "85px"
+                        // }}
                           ></div>
                     </div>
                     <img src={process.env.PUBLIC_URL + "assets/imgs/arrow_vector.svg"} alt="arrow" className="arrow"/>

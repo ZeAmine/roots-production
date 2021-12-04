@@ -21,7 +21,7 @@ const img = useRef(null)
 // window.addEventListener('scroll', changeWave)
 
     return (
-        <body className="body-welcome">
+        <section className="body-welcome">
              <div className="content_welcome">
 
 {/* ###
@@ -118,7 +118,7 @@ const img = useRef(null)
                     <img src={process.env.PUBLIC_URL + "assets/imgs/arrow_vector.svg"} alt="arrow" className="arrow"/>
                 </a>
             </div>
-        </body>
+        </section>
     );
 };
 

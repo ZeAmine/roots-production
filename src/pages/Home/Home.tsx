@@ -3,10 +3,9 @@ import React, { useState, useEffect } from "react";
 // import Cards from "../Cards/Cards";
 // import { ICardItems, ICards } from "../../decl";
 // import { getCards } from "../../api";
-import Footer from "../Footer/Footer";
-import Marquee from "../Marquee/Marquee";
-import Winner from "../Winner/Winner";
-import Newsletter from "../Newsletter/Newsletter";
+import Marquee from "../../components/Marquee/Marquee";
+import Winner from "../../components/Winner/Winner";
+import Newsletter from "../../components/Newsletter/Newsletter";
 import "./Home.css";
 
 // interface AppState {
@@ -27,14 +26,15 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className="home">
-      {/*Home*/}
-      <Winner />
-      {/*<Cards cards={appCards} />*/}
-      <Marquee />
-      <Newsletter />
-      <Footer />
-    </div>
+    <main className="home">
+      <div className="main__wrap">
+        {/*Home*/}
+        <Winner />
+        {/*<Cards cards={appCards} />*/}
+        <Marquee />
+        <Newsletter />
+      </div>
+    </main>
   );
 };
 

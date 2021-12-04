@@ -1,3 +1,8 @@
+.section.newsletter {
+  padding-bottom: 40vh;
+}
+
+
 .newsletter__block {
   display: flex;
   flex-flow: column nowrap;

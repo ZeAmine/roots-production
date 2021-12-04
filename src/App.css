@@ -52,14 +52,24 @@ svg {
 
 :root {
   --clr-primary-1: #fa7921;
-  --clr-primary-2: black;
+  --clr-primary-2: #000;
   --clr-primary-3: #f4f4f4;
   --clr-bg: #8185dc;
   --clr-bg-2: #f5dbdb;
+  --pink-tint: #ffecf7;
+  --color-gray-200: #f1f3f9;
+  --color-gray-100: #f8f9fc;
+  --color-gray-300: #dee3ed;
+  --color-gray-400: #c2c9d6;
+  --color-gray-600: #5e636e;
+  --color-gray-700: #2f3237;
+  --color-gray-800: #1d1e20;
+  --color-gray-900: #111213;
 
   --font-primary-1: Epilogue, sans-serif;
   --font-primary-2: Clash Grotesk, sans-serif;
   --transition: all 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
   --site-width: 80vw;
   --site-width-2xl: 70vw;
@@ -100,15 +110,12 @@ svg {
 /*------Button*/
 .cercle__btn {
   font-family: var(--font-primary-1);
-  position: absolute;
-  top: 15px;
-  right: 15px;
   display: flex;
   place-content: space-around;
   place-items: center;
-  height: 50px;
+  height: 60px;
   padding: 0 12px;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 50px;
   transition: background-color 300ms cubic-bezier(0.16, 1, 0.3, 1) 200ms,
     width 200ms ease-out;
@@ -118,14 +125,13 @@ svg {
 .cercle_btn_container {
   width: 18px;
   height: auto;
-  transform: translateY(-1px);
 }
 
 .cercle_btn_icon {
   transition: var(--transition) 100ms;
 }
-.card__like:hover .card_like_icon {
-  transform: translate(-1.5px, -1px) rotate(-10deg);
+.cercle__btn:hover .card_like_icon {
+  transform: translate(-1.5px, -1px);
 }
 
 .cercle_btn_text {
@@ -139,6 +145,20 @@ svg {
   from {
     opacity: 0;
     transform: translateX(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cercle_btn_text.reverse {
+  animation: appear_reverse 400ms ease-out;
+}
+@keyframes appear_reverse {
+  from {
+    opacity: 0;
+    transform: translateX(-4px);
   }
   to {
     opacity: 1;

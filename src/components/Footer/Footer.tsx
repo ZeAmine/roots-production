@@ -47,12 +47,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__end">
-          <a href="/">
-            <img
-              src={process.env.PUBLIC_URL + "assets/icons/logo2.svg"}
-              alt="logo"
-            />
-          </a>
+          <img
+            src={process.env.PUBLIC_URL + "assets/icons/logo2.svg"}
+            alt="logo"
+          />
         </div>
       </div>
     </footer>

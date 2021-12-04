@@ -1,13 +1,27 @@
-import React from 'react';
-import Home from "./components/Home/Home";
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Artist from "./pages/Artist/Artist";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path={"/artist"} element={<Artist />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
+
+// TODO
+// - Importer les fonts
+// - Revoir le react-router
+// - Organiser le :root (font, transition, color...)
+// - Revoir les buttons
+// - Revoir les titres (H1, H2, H3...)

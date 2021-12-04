@@ -1,0 +1,33 @@
+.section.artist {
+  padding-top: 10vh;
+  padding-bottom: 40vh;
+}
+
+/*------------BUTTON*/
+.artist_btn_back_block {
+  display: flex;
+  place-content: flex-start;
+  place-items: center;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 5vh;
+}
+
+.artist_btn_back {
+  display: inline-flex;
+  place-content: center;
+  place-items: center;
+  width: 120px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 3px solid var(--clr-primary-2);
+  background-color: var(--clr-primary-1);
+  cursor: pointer;
+}
+
+.artist_btn_back_container {
+  width: 25px;
+  height: auto;
+  transform: rotate(90deg);
+}

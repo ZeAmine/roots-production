@@ -153,11 +153,6 @@
   background-color: var(--clr-primary-3);
 }
 
-.cercle__btn.instagram,
-.cercle__btn.spotify {
-  height: 60px;
-}
-
 .cercle__btn.spotify {
   position: absolute;
   top: 28%;
@@ -172,7 +167,7 @@
 
 .cercle_btn_container.instagram,
 .cercle_btn_container.spotify {
-  width: 28px;
+  width: 22px;
   height: auto;
 }
 

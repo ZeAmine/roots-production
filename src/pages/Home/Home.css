@@ -1,0 +1,8 @@
+.main {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.main__wrap {
+  margin-top: 5rem;
+}

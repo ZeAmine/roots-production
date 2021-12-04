@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Cards from "../Cards/Cards";
+import ListCard from "../ListCard/ListCard";
 import { ICards } from "../../decl";
 import { getCards } from "../../api";
 import "./Home.css";
@@ -14,7 +14,6 @@ const Home = () => {
   const fetchCards = async () => {
     const cardsPages = await getCards();
     setAppCards({ cards: cardsPages });
-    console.log(appCards);
   };
 
   useEffect(() => {
@@ -23,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Cards cards={appCards?.cards} />
+      <ListCard cards={appCards?.cards} />
     </div>
   );
 };

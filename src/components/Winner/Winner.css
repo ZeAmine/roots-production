@@ -11,8 +11,8 @@
   place-items: center;
   width: inherit;
   height: 740px;
-  border-top: 2px solid var(--clr-primary-2);
-  border-bottom: 2px solid var(--clr-primary-2);
+  border-top: 3px solid var(--clr-primary-2);
+  border-bottom: 3px solid var(--clr-primary-2);
   overflow: hidden;
 }
 
@@ -103,7 +103,7 @@
   place-items: center;
   width: 100%;
   height: auto;
-  border-top: 2px solid var(--clr-primary-2);
+  border-top: 3px solid var(--clr-primary-2);
   background-color: var(--clr-primary-1);
   overflow: hidden;
 }
@@ -156,13 +156,13 @@
 .cercle__btn.spotify {
   position: absolute;
   top: 28%;
-  right: 18%;
+  right: 20%;
 }
 
 .cercle__btn.instagram {
   position: absolute;
   top: 38%;
-  right: 18%;
+  right: 20%;
 }
 
 .cercle_btn_container.instagram,

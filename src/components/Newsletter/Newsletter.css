@@ -2,15 +2,13 @@
   padding-bottom: 40vh;
 }
 
-
 .newsletter__block {
   display: flex;
   flex-flow: column nowrap;
-  place-items: flex-start;
   width: 100%;
-  height: 400px;
+  height: auto;
+  border: 3px solid black;
   background-color: var(--clr-primary-1);
-  border: 2px solid black;
 }
 
 .newsletter__text {
@@ -42,7 +40,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  border-top: 2px solid black;
+  border-top: 3px solid black;
   background-color: white;
 }
 
@@ -65,7 +63,7 @@
   font-weight: 500;
   color: black;
   padding: 1rem 3rem;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 50px;
   background-color: var(--clr-primary-1);
   cursor: pointer;

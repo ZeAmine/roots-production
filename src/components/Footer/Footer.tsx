@@ -35,6 +35,12 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer_block_btn">
+            <div className="footer_string_rotate">
+              <img
+                src={process.env.PUBLIC_URL + "assets/icons/back_string.svg"}
+                alt="phrase qui tourne"
+              />
+            </div>
             <button className="footer__btn">
               <div className="footer_btn_container_img">
                 <img

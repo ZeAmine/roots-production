@@ -3,8 +3,7 @@ import "./Cookies_Politics.css"
 import "../Legal_Mention/Legal_Mention.css"
 
 const Cookies_Politics = () => {
-
-    
+  
     return (
         <div className="backgroundPurpleCookie">
             <div>

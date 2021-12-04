@@ -2,7 +2,6 @@ import React, {} from 'react';
 import "./Legal_Mention.css"
 
 const Legal_Mention = () => {
-
     
 return (
     <div className="backgroundPurple">

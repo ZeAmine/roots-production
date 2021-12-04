@@ -1,0 +1,13 @@
+.cards_list_block {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  /*background-color: red;*/
+}
+
+.cards_list_container {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: space-between;
+  place-items: center;
+}

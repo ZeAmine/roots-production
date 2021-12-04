@@ -1,9 +1,11 @@
+@font-face { font-family: ClashGroteskBold; 
+    src: url('../../fonts/ClashGrotesk-Bold.ttf'); } 
+
+
 body{
     background-color: #F4F4F4;
 }
-/* body .body-welcome{
-    margin-top: 15vh;
-} */
+
 .content_welcome{
     margin: 0 auto;
     position: relative;
@@ -19,7 +21,7 @@ body{
 }
 
 .title_artist{
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'ClashGroteskBold';
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -28,27 +30,28 @@ body{
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    width: 750px;
+    width: 800px;
     height: 345px;
     transform: translateZ(60px)
 }
 
 .title_artist div:not(:nth-child(1)) {
-    margin-top: 24px;
+    margin-top: 15px;
 }
 
-.title_artist span:not(.italic){
+.title_artist span:not(.white-text){
     padding: 20px 20px 2px;
     background: #F4F4F4;
     border: 2px solid #000000;
     border-radius:5px;
 }
 
-.italic{
-    font-style: italic;
+.white-text{
     text-shadow: 2px 0 0 #000000, 2px 2px 0 #000000, 0 2px 0 #000000, -2px 2px 0 #000000, -2px 0 0 #000000, -2px -2px 0 #000000, 0 -2px 0 #000000, 2px -2px 0 #000000;
     color: #F4F4F4;
 }
+
+/* Albums */
 
 .albums{
     width: 90%;
@@ -84,9 +87,11 @@ body{
 
 .donutAlbum{
     padding-top: 20px;
-    /* padding-left:50px; */
     width:12rem;
 }
+
+/* Down button */
+
 .arrow{
     z-index: 1;
     width: 2.3vw;
@@ -106,17 +111,19 @@ body{
     align-items: center;
 }
 
+/* Wave && animation */
+
 .wave {
     background: url(./img/wave.svg) repeat-x; 
     background-position: 100%;
     background-size: contain;
     position: absolute;
+    height: 85px;
     z-index: 0;
-    bottom:0;
-    width: 984.21pt;
-    height: 31px;
+    width: 1100pt;
     animation: wave 21s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
+    
   }
   
   @keyframes wave {
@@ -137,10 +144,11 @@ body{
     }
 }
 
+/* Parallax */
+
 .parallax-effect-img {
     width: 10rem;
     transform-style: preserve-3d;
-    /* transform: perspective(1000px); */
     background-image: url('./img/purple_rectangle_small.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -148,7 +156,6 @@ body{
 .parallax-effect-img2 {
     width: 14rem;
     transform-style: preserve-3d;
-    /* transform: perspective(1000px); */
     background-image: url('./img/pink_rectangle_medium.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -156,7 +163,6 @@ body{
 .parallax-effect-img3{
     width: 10rem;
     transform-style: preserve-3d;
-    /* transform: perspective(1000px); */
     background-image: url('./img/pink_rectangle_medium.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -164,7 +170,6 @@ body{
 .parallax-effect-img4{
     width: 8rem;
     transform-style: preserve-3d;
-    /* transform: perspective(1000px); */
     background-image: url('./img/purple_rectangle_medium.png');
     background-size: contain;
     background-repeat: no-repeat;

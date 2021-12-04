@@ -1,0 +1,13 @@
+.backgroundPurpleCookie{
+    padding-top: 30px;
+    background-color: #8185DC;
+    height:514vh;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundPurpleCookie h2{
+    font-family: ClashGroteskSemiBold;
+    font-size: 70px;
+    text-transform:uppercase
+}

@@ -5,6 +5,7 @@ import Presentation from '../Presentation/Presentation';
 import Card from "../Card/Card";
 import "./Home.css"
 import Legal_Mention from '../Legal_Mention/Legal_Mention';
+import Cookies_Politics from '../Cookies_Politics/Cookies_Politics';
 
 
 
@@ -15,7 +16,8 @@ const Home = () => {
             <Header/>
             <Welcome/>
             <Presentation/>
-            <Legal_Mention/>
+            {/* <Legal_Mention/> */}
+            {/* <Cookies_Politics/> */}
         </div>
     );
 };

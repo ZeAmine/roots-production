@@ -1,4 +1,9 @@
-/* .home{
+@font-face { font-family: ClashGroteskBold; 
+    src: url('../../fonts/ClashGrotesk-Bold.ttf'); } 
 
-    margin:0 30px
-} */
+@font-face { font-family: ClashGroteskSemiBold; 
+    src: url('../../fonts/ClashGrotesk-Semibold.ttf'); } 
+
+@font-face { font-family: ClashGroteskRegular; 
+    src: url('../../fonts/ClashGrotesk-Regular.ttf'); } 
+    

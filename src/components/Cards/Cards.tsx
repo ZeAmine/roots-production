@@ -15,13 +15,15 @@ const Cards = ({ cards }: CardsProps) => {
           <h1>{cards?.title}</h1>
         </div>
         {cards?.items.map((card: ICardItem) => {
-          <ListCard
-            key={card.id}
-            id={card.id}
-            img={card.img}
-            gender={card.gender}
-            name={card.name}
-          />;
+          return (
+            <ListCard
+              key={card.id}
+              id={card.id}
+              img={card.img}
+              gender={card.gender}
+              name={card.name}
+            />
+          );
         })}
         {/*<div className="cards__list">*/}
         {/*  <div className="cards_list_container">*/}

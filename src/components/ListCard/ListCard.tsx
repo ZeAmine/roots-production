@@ -25,7 +25,7 @@ const ListCard: React.FC<CardsProps> = () => {
           className="cercle__btn like"
           style={{
             backgroundColor: likeActive ? "var(--clr-primary-1" : "white",
-            width: slideBtnLike ? "110px" : "50px",
+            width: slideBtnLike ? "110px" + "100px" : "50px",
           }}
           onClick={() => setLikeActive(!likeActive)}
           onMouseOver={() => setSlideBtnLike(true)}

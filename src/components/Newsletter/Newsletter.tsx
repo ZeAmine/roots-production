@@ -11,7 +11,7 @@ const Newsletter = () => {
               <h2>NEWSLETTER</h2>
             </div>
             <div className="newsletter__subtitle">
-              <h2>RESTEZ INFORME DES PROCHAINS CONCOURS</h2>
+              <h2>RESTEZ INFORMÉ DES PROCHAINS CONCOURS</h2>
             </div>
           </div>
           <div className="newsletter__bar">
@@ -22,6 +22,12 @@ const Newsletter = () => {
             />
             <button className="newsletter__btn">S'inscrire</button>
           </div>
+        </div>
+        <div className="newsletter_bg">
+          <img
+            src={process.env.PUBLIC_URL + "assets/imgs/logo_bg.png"}
+            alt="forme"
+          />
         </div>
       </div>
     </section>

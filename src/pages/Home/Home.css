@@ -3,6 +3,7 @@
   scroll-behavior: smooth;
 }
 
-.main__wrap {
+.home__wrap {
   margin-top: 5rem;
+  height: 100%;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,21 +42,35 @@ const Footer = () => {
                 alt="phrase qui tourne"
               />
             </div>
-            <button className="footer__btn">
-              <div className="footer_btn_container_img">
-                <img
-                  src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
-                  alt="arrow"
-                  className="footer_btn_img"
-                />
-              </div>
-            </button>
+            <Link to="#home">
+              <button className="footer__btn">
+                <div className="footer_btn_container_img">
+                  <img
+                    src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
+                    alt="arrow"
+                    className="footer_btn_img"
+                  />
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="footer__end">
           <img
             src={process.env.PUBLIC_URL + "assets/icons/logo2.svg"}
             alt="logo"
+          />
+        </div>
+        <div className="footer_bg cercle">
+          <img
+            src={process.env.PUBLIC_URL + "assets/imgs/cercle_bg_w.png"}
+            alt="forme"
+          />
+        </div>
+        <div className="footer_bg rectangle">
+          <img
+            src={process.env.PUBLIC_URL + "assets/imgs/rectangle_bg_w.png"}
+            alt="forme"
           />
         </div>
       </div>

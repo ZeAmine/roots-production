@@ -1,8 +1,10 @@
+.cards__list {
+  position: relative;
+}
 .cards_list_block {
   width: 100%;
   height: auto;
   padding: 1rem 0;
-  /*background-color: red;*/
 }
 
 .cards_list_container {
@@ -10,4 +12,27 @@
   flex-flow: row wrap;
   place-content: space-between;
   place-items: center;
+}
+
+.list_card_bg.cercle {
+  position: absolute;
+  top: -2rem;
+  right: 3rem;
+  width: 50rem;
+  height: auto;
+  z-index: -50;
+}
+
+.list_card_bg.rectangle {
+  position: absolute;
+  bottom: 26rem;
+  left: 5rem;
+  width: 40rem;
+  height: auto;
+  z-index: -50;
+}
+
+.list_card_bg.cercle,
+.list_card_bg.rectangle {
+  opacity: 0.3;
 }

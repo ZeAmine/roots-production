@@ -7,6 +7,6 @@ export const getCards = async (): Promise<ICards> => {
     return res.data;
   } catch (error) {
     console.error("error", error);
-    return { title: "fail", items: [], urlSuffixe: "www.html.com" };
+    return { title: "fail", items: [], urlSuffixe: "http://error" };
   }
 };

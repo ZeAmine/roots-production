@@ -28,6 +28,18 @@ const ListCard = ({ cards }: CardsProps) => {
           </div>
         </div>
       </div>
+      <div className="list_card_bg cercle">
+        <img
+          src={process.env.PUBLIC_URL + "assets/imgs/cercle_bg_b.png"}
+          alt="forme"
+        />
+      </div>
+      <div className="list_card_bg rectangle">
+        <img
+          src={process.env.PUBLIC_URL + "assets/imgs/rectangle_bg_b.png"}
+          alt="forme"
+        />
+      </div>
     </section>
   );
 };

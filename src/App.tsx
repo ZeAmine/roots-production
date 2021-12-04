@@ -20,8 +20,8 @@ const App = () => {
 export default App;
 
 // TODO
-// - Importer les fonts
 // - Revoir le react-router
 // - Organiser le :root (font, transition, color...)
 // - Revoir les buttons
 // - Revoir les titres (H1, H2, H3...)
+// - Inserer les images bg

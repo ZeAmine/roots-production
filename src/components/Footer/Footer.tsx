@@ -34,9 +34,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer__btn">
+          <div className="footer_block_btn">
             <button className="footer__btn">
-              <h1>Button</h1>
+              <div className="footer_btn_container_img">
+                <img
+                  src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
+                  alt="arrow"
+                  className="footer_btn_img"
+                />
+              </div>
             </button>
           </div>
         </div>

@@ -13,7 +13,9 @@
   height: 100%;
 }
 
+/*----------Start*/
 .footer__start {
+  position: relative;
   display: flex;
   place-items: center;
   margin-top: 4rem;
@@ -49,6 +51,31 @@
   margin-right: 2rem;
 }
 
+/*----------Button*/
+.footer_block_btn {
+  position: absolute;
+  right: 0;
+  top: -120px;
+}
+
+.footer__btn {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 138px;
+  height: 138px;
+  background-color: var(--clr-primary-1);
+  border: 2px solid var(--clr-primary-2);
+  border-radius: 50%;
+}
+
+.footer_btn_container_img {
+  width: 50px;
+  height: auto;
+  transform: rotate(180deg);
+}
+
+/*----------End*/
 .footer__end {
   margin-bottom: 2rem;
 }

@@ -45,3 +45,16 @@
 
     margin-right: 10px;
 }
+
+.women-picture{
+    animation: rotate 20s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }

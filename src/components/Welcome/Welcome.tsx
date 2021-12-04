@@ -12,7 +12,7 @@ waveValue = (window.scrollY/10);
 console.log(waveValue)
 const str = waveValue.toString();
 const changeWave = () =>{
-    if(window.scrollY >=100) {
+    if(window.scrollY >=80) {
         setWave(true);
     } else {
         setWave(false);

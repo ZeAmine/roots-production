@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState} from 'react';
-// import Background from '../../../public/assets/imgs/gray_vector.svg';
 import "./Welcome.css"
 import Tilt from 'react-parallax-tilt';
 
@@ -94,7 +93,6 @@ window.addEventListener('scroll', changeWave)
                      </Tilt>
                     </div>
                 </div>
-                {/* </Tilt> */}
                 <a className="progress" href="#anchor">
                     <div className="waves_button">
                         <div className="wave"

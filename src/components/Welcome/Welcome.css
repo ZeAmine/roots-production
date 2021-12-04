@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100% ;
-    height: 44vw;
+    height: 94vh;
     z-index: 0;
 }
 
@@ -28,7 +28,7 @@ body{
     justify-content: space-between;
     position: absolute;
     width: 800px;
-    height: 345px;
+    height: 490px;
     transform: translateZ(60px)
 }
 

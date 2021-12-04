@@ -25,7 +25,6 @@ return (
         </div>
         <div className="star_back">
             <img src={process.env.PUBLIC_URL + "assets/imgs/star_back.svg"} alt='stars' className="stars"/>
-
         </div>
     </div>
 

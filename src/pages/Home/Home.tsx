@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Welcome from "../../components/Welcome/Welcome";
+import Presentation from "../../components/Presentation/Presentation";
 import Winner from "../../components/Winner/Winner";
 import ListCard from "../../components/ListCard/ListCard";
 import Marquee from "../../components/Marquee/Marquee";
@@ -27,7 +28,8 @@ const Home = () => {
   return (
     <main className="home">
       <div className="home__wrap">
-        <Welcome />
+        <Welcome/>
+        <Presentation/>
         <Winner />
         <ListCard cards={appCards?.cards} />
         <Marquee />

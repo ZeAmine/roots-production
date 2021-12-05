@@ -28,10 +28,11 @@ const Presentation = () => {
           </h3>
           <div className="explanation">
             <p>
-              Chaque semaine, le vainqueur de notre concours{" "}
+              Chaque semaine, le vainqueur de notre concours
               <strong>ROOTS®</strong> sera mis en avant sur nos différents
-              réseaux ainsi que sur ceux de nos partenaires officiels,{" "}
-              <strong>Spotify</strong> et <strong>RTL.</strong>
+              réseaux ainsi que sur ceux de nos partenaires officiels,
+              <strong>Spotify</strong>, <strong>RTL</strong> ainsi que
+              <strong> Wagram Music.</strong>
             </p>
 
             <div className="logos">

@@ -5,24 +5,33 @@ import Winner from "../../components/Winner/Winner";
 import ListCard from "../../components/ListCard/ListCard";
 import Marquee from "../../components/Marquee/Marquee";
 import Newsletter from "../../components/Newsletter/Newsletter";
-import { getCards } from "../../api";
-import { ICards } from "../../decl";
+import { getUserInfos } from "../../api";
+import { ICards, IUser } from "../../decl";
 import "./Home.css";
 
 interface AppState {
-  cards: ICards | undefined;
+  // cards: ICards | undefined;
+  user: IUser | any;
 }
 
 const Home = () => {
-  const [appCards, setAppCards] = useState<AppState>();
+  // const [appCards, setAppCards] = useState<AppState["cards"]>();
+  const [user, setUser] = useState<AppState["user"]>();
 
-  const fetchCards = async () => {
-    const cardsPages = await getCards();
-    setAppCards({ cards: cardsPages });
-  };
+  // const fetchCards = async () => {
+  //   const cardsPages = await getCards();
+  //   setAppCards({ cards: cardsPages });
+  // };
+  console.log(user);
 
   useEffect(() => {
-    fetchCards();
+    // fetchCards();
+    const fetchUser = async () => {
+      const userPage = await getUserInfos();
+      setUser({ user: userPage });
+      // console.log(userPage);
+    };
+    fetchUser();
   }, []);
 
   return (
@@ -31,7 +40,7 @@ const Home = () => {
         <Welcome />
         <Presentation />
         <Winner />
-        <ListCard cards={appCards?.cards} />
+        {/*<ListCard cards={appCards?.cards} />*/}
         <Marquee />
         <Newsletter />
       </div>

@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 
 const Welcome = () => {
   return (
-    <section className="welcome">
+    <section id="Welcome" className="welcome">
       <div className="content_welcome">
         {/* ###Title### */}
         <div className="title_artist">

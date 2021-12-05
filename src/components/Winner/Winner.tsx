@@ -143,15 +143,17 @@ const Winner = () => {
           </div>
         </div>
         <button className="winner__scroll">
-          <span className="winner_scroll_container">
-            <span className="winner_scroll_text">Votez pour le prochain</span>
-            <div className="winner_scroll_img">
-              <img
-                src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
-                alt="fleche vers le bas"
-              />
-            </div>
-          </span>
+          <a href="#ListCard">
+            <span className="winner_scroll_container">
+                <span className="winner_scroll_text">Votez pour le prochain</span>
+                <div className="winner_scroll_img">
+                  <img
+                    src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
+                    alt="fleche vers le bas"
+                  />
+                </div>
+            </span>
+          </a>
         </button>
       </div>
     </section>

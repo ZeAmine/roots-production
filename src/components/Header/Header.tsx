@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   return (
     <div className="header">
-      <a className="header_logo" href="#">
+      <Link to="/">
         <img
           src={process.env.PUBLIC_URL + "assets/imgs/logo.svg"}
           alt="logo root"
         />
-      </a>
+      </Link>
       <a
         href="https://roots.tinker.ovh/oauth"
         target="_blank"

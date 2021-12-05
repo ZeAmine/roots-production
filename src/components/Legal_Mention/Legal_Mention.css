@@ -18,7 +18,7 @@
 }
 
 .backgroundPurple h2{
-    font-family: ClashGrotesk-Semibold;
+    font-family: var(--font-primary-2);
     font-size: 4.6rem;
     text-transform:uppercase
 }
@@ -27,7 +27,7 @@
     margin-top: 30px;
     padding:30px;
     width: 750px;
-    font-family: Epilogue;
+    font-family: var(--font-primary-1);
     font-size: 1.1rem;
     line-height: 25px;
     background-color: #F4F4F4;

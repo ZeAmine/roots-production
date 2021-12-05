@@ -1,5 +1,5 @@
 .header {
-  background-color: #f4f4f4;
+  background-color: var(  --clr-primary-3);
   margin: 0;
   padding: 30px;
   width: 100%;

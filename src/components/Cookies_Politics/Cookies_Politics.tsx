@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const Cookies_Politics = () => {
   
     return (
-        <div className="backgroundPurpleCookie">
+        <div  id="topPage" className="backgroundPurpleCookie">
             <div>
                 <Link to="/">
                     <div className="returnButton">
-                        <a href="#"><img src={process.env.PUBLIC_URL + "assets/imgs/horizontal_arrow.svg"} alt='Horizontal arrow' className="horizontal_arrow"/></a>
+                      <img src={process.env.PUBLIC_URL + "assets/imgs/horizontal_arrow.svg"} alt='Horizontal arrow' className="horizontal_arrow"/>
                     </div>
                 </Link>
                 <h2>Politique cookies</h2>
@@ -45,7 +45,7 @@ const Cookies_Politics = () => {
                 </div>
                 <div className="text_content">
                     <p>
-                    Publicités ciblées<br></br>
+                    4. Publicités ciblées<br></br>
                     Certaines publicités ciblées que nous (ou un fournisseur de services agissant pour notre compte) vous affichons sur la base d'informations sur vos activités en ligne sur des sites web et autres propriétés interactives exploitées par des tiers peuvent inclure l'icône "Choix en matière de publicité" ou un autre mécanisme permettant de refuser de recevoir des publicités ciblées. Vous pouvez cliquer sur l'icône "Choix en matière de publicité" (AdChoices) ou visiter le site www.aboutads.info pour recevoir plus d'informations sur la collecte et l'utilisation des informations relatives à vos activités en ligne pour la publicité ciblée ou pour savoir comment refuser que vos données soient utilisées pour la publicité ciblée par les entreprises participant à l'Alliance Européenne pour la Publicité Numérique (AEPN).<br></br><br></br>
                     Les utilisateurs canadiens peuvent également consulter le site www.youradchoices.ca.<br></br>
                     Les utilisateurs européens peuvent également consulter le site www.youronlinechoices.com pour savoir comment refuser que leurs données soient utilisées pour de la publicité ciblée par les sociétés membres de l'Alliance Européenne pour la Publicité Numérique (AEPN).<br></br>

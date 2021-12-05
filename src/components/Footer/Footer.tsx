@@ -43,7 +43,7 @@ const Footer = () => {
               />
             </div>
             {/* <Link to="#"> */}
-            <a href="#Welcome">
+            <a href="#topPage">
               <button className="footer__btn">
                 <div className="footer_btn_container_img">
                   <img

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CGU = () => {
   
     return (
-        <div className="backgroundPurpleCGU">
+        <div id="topPage" className="backgroundPurpleCGU">
             <div>
                 <Link to="/">
                     <div className="returnButton">

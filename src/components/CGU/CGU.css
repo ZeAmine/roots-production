@@ -8,7 +8,7 @@
 
 .backgroundPurpleCGU h2{
     width:745px;
-    font-family: ClashGrotesk-Semibold;
+    font-family: var(--font-primary-2);
     font-size: 4rem;
     text-transform:uppercase
 }

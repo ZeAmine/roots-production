@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Legal_Mention = () => {
     
 return (
-    <div className="backgroundPurple">
+    <div id="topPage" className="backgroundPurple">
         <div>
             <Link to="/">
                 <div className="returnButton">

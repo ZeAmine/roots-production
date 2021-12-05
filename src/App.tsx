@@ -12,7 +12,10 @@ import Legal_Mention from "./components/Legal_Mention/Legal_Mention";
 import CGU from "./components/CGU/CGU";
 import "./App.css";
 
+
+
 const App = () => {
+  
   return (
     <Router>
       <Header />

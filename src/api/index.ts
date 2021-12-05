@@ -1,8 +1,8 @@
 import axios from "axios";
-import { ICards, IUser, IVote } from "../decl";
+import { ICards, IUser, IVote, IArtist } from "../decl";
 
 const tokenURL = window.location.href;
-const accessToken = tokenURL.substring(29);
+export const accessToken = tokenURL.substring(29);
 localStorage.setItem("userToken", accessToken == null ? "error" : accessToken);
 
 const params = { id: "1DgBVE3lCnC7Osg9zpAt6N" };
@@ -41,7 +41,7 @@ export const getVote = async (): Promise<IVote> => {
   }
 };
 
-export const getArtist = async (): Promise<IVote> => {
+export const getArtist = async (): Promise<IArtist> => {
   try {
     const res = await axios.put(`https://roots.tinker.ovh/getArtist`, params, {
       headers: {
@@ -51,7 +51,15 @@ export const getArtist = async (): Promise<IVote> => {
     return res.data;
   } catch (error) {
     console.error("error", error);
-    return { vote: "fail" };
+    return {
+      id: 0,
+      artistId: "fail",
+      artistName: "fail",
+      artistImgUrl: "fail",
+      artistFollowers: 0,
+      artistPopularity: 0,
+      artistVotes: 0,
+    };
   }
 };
 

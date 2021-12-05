@@ -1,6 +1,6 @@
 import React from "react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         <div className="footer__end">
           <img
-            src={process.env.PUBLIC_URL + "assets/icons/logo2.svg"}
+            src={process.env.PUBLIC_URL + "assets/icons/logo_white.svg"}
             alt="logo"
           />
         </div>

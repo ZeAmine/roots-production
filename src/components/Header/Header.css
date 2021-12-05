@@ -1,16 +1,44 @@
 .header {
-  background-color: var(  --clr-primary-3);
-  margin: 0;
-  padding: 30px;
-  width: 100%;
-  height: 9vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 9999;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 2.5rem;
+  background-color: var(--clr-primary-3);
+  z-index: 9999;
+}
+
+.header_logo {
+  width: 12rem;
+  height: auto;
+}
+
+.header_btn_profil {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  place-items: center;
+}
+
+.header_btn_img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-primary-2);
+}
+
+.header_btn_name {
+  margin-right: 1.5rem;
+}
+.header_btn_name span {
+  font-family: var(--font-primary-1);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-primary-2);
 }
 
 .button_connect {
@@ -30,8 +58,4 @@
 
 .button_connect:active {
   font-weight: 600;
-}
-
-.header_logo {
-  width: 12rem;
 }

@@ -10,12 +10,11 @@ interface CardsState {
 }
 
 const ListCard = () => {
-  const [appArtist, setAppArtist] = useState<CardsState["artist"]>();
+  const [appArtist, setAppArtist] = useState<CardsState>();
 
   const fetchArtist = async () => {
     const artistPage = await getArtist();
     setAppArtist({ artist: artistPage });
-    // console.log(artistPage);
   };
 
   useEffect(() => {
@@ -31,13 +30,7 @@ const ListCard = () => {
         <div className="cards_list_block">
           <div className="cards_list_container">
             {appArtist?.artist.map((artist: IArtist) => {
-              return (
-                <Card
-                  key={artist.artistId}
-                  artistImgUrl={artist.artistImgUrl}
-                  artistItem={artist}
-                />
-              );
+              return <Card key={artist.artistId} artistItem={artist} />;
             })}
           </div>
         </div>

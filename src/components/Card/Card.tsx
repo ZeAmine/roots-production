@@ -5,10 +5,9 @@ import "./Card.css";
 
 export interface CardsProps {
   artistItem: IArtist;
-  artistImgUrl: string;
 }
 
-const Card = ({ artistItem, artistImgUrl }: CardsProps) => {
+const Card = ({ artistItem }: CardsProps) => {
   const { artistVotes, artistName } = artistItem;
 
   const [likeActive, setLikeActive] = useState<boolean>(false);
@@ -86,7 +85,7 @@ const Card = ({ artistItem, artistImgUrl }: CardsProps) => {
             <h4>{artistName}</h4>
           </div>
           <div className="card__image">
-            <img src={artistImgUrl} alt="artiste image" />
+            <img src="" alt="artiste image" />
           </div>
         </div>
       </article>

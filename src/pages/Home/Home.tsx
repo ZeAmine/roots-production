@@ -40,7 +40,8 @@ const Home = () => {
         <Welcome />
         <Presentation />
         <Winner />
-        {/*<ListCard cards={appCards?.cards} />*/}
+
+        {/* <ListCard cards={appCards?.cards} /> */}
         <Marquee />
         <Newsletter />
       </div>

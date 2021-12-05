@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Cookies_Politics from "./components/Cookies_Politics/Cookies_Politics";
 import Legal_Mention from "./components/Legal_Mention/Legal_Mention";
+import CGU from "./components/CGU/CGU";
 import "./App.css";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/artiste" element={<Artist />} />
         <Route path="/politiques" element={<Cookies_Politics />} />
         <Route path="/mentions-legales" element={<Legal_Mention />} />
+        <Route path="/CGU" element={<CGU />} />
         <Route path="/user" element={<Legal_Mention />} />
       </Routes>
       <Footer />

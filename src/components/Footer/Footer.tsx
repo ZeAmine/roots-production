@@ -31,7 +31,7 @@ const Footer = () => {
                 <Link to="/politiques">Politique</Link>
               </li>
               <li className="footer_links_item">
-                <a href="/">CGU</a>
+                <Link to="/CGU">CGU</Link>
               </li>
             </ul>
           </div>

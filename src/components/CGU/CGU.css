@@ -1,4 +1,4 @@
-.backgroundPurpleCookie{
+.backgroundPurpleCGU{
     padding-top: 30px;
     background-color: #8185DC;
     height:514vh;
@@ -6,8 +6,9 @@
     justify-content: center;
 }
 
-.backgroundPurpleCookie h2{
-    font-family: ClashGrotesk-SemiBold;
-    font-size: 4.6rem;
+.backgroundPurpleCGU h2{
+    width:745px;
+    font-family: ClashGrotesk-Semibold;
+    font-size: 4rem;
     text-transform:uppercase
 }

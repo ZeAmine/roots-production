@@ -29,9 +29,9 @@ const Presentation = () => {
           <div className="explanation">
             <p>
               Chaque semaine, le vainqueur de notre concours
-              <strong>ROOTS®</strong> sera mis en avant sur nos différents
+              <strong> ROOTS®</strong> sera mis en avant sur nos différents
               réseaux ainsi que sur ceux de nos partenaires officiels,
-              <strong>Spotify</strong>, <strong>RTL</strong> ainsi que
+              <strong> Spotify</strong>, <strong> RTL</strong> ainsi que
               <strong> Wagram Music.</strong>
             </p>
 

@@ -9,7 +9,7 @@ export interface CardsProps {
 
 const ListCard = ({ cards }: CardsProps) => {
   return (
-    <section className="section cards__list">
+    <section id="ListCard"className="section cards__list">
       <div className="cards_list_wrap container">
         <div className="section__title">
           <h1>{cards?.title}</h1>

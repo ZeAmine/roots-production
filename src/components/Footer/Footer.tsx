@@ -31,7 +31,7 @@ const Footer = () => {
                 <Link to="/politiques">Politique</Link>
               </li>
               <li className="footer_links_item">
-                <a href="/">CGU</a>
+                <Link to="/CGU">CGU</Link>
               </li>
             </ul>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               />
             </div>
             {/* <Link to="#"> */}
-            <a href="#Welcome">
+            <a href="#topPage">
               <button className="footer__btn">
                 <div className="footer_btn_container_img">
                   <img

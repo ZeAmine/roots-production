@@ -1,14 +1,17 @@
 import React, {} from 'react';
 import "./Legal_Mention.css"
+import { Link } from "react-router-dom";
 
 const Legal_Mention = () => {
     
 return (
-    <div className="backgroundPurple">
+    <div id="topPage" className="backgroundPurple">
         <div>
-            <div className="returnButton">
-                <a href="#"><img src={process.env.PUBLIC_URL + "assets/imgs/horizontal_arrow.svg"} alt='Horizontal arrow' className="horizontal_arrow"/></a>
-            </div>
+            <Link to="/">
+                <div className="returnButton">
+                    <a href="#"><img src={process.env.PUBLIC_URL + "assets/imgs/horizontal_arrow.svg"} alt='Horizontal arrow' className="horizontal_arrow"/></a>
+                </div>
+            </Link>
             <h2>Mention Légales</h2>
             <div className="text_content">
                 <p>

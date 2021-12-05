@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <a className="header_logo" href="#">
+      <Link to="/">
         <img
           src={process.env.PUBLIC_URL + "assets/imgs/logo.svg"}
           alt="logo root"

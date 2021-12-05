@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path={"/Artiste"} element={<Artist />} />
+        <Route path="/Artiste" element={<Artist />} />
         <Route path="/Politique" element={<Cookies_Politics />} />
         <Route path="/Mention-legal" element={<Legal_Mention />} />
       </Routes>
@@ -27,7 +27,7 @@ export default App;
 
 // TODO
 // - Revoir le react-router
-// - Organiser le :root (font, transition, color...)
-// - Revoir les buttons
 // - Revoir les titres (H1, H2, H3...)
-// - Inserer les images bg
+
+// clique sur ce connecter => route vers ovh => une fois connecter renver ver le back puis ver le front => obtention du token => utilisation du site (save, like...)
+// fetch pour tout features

@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <main className="home">
       <div className="home__wrap">
-        <Welcome/>
-        <Presentation/>
+        <Welcome />
+        <Presentation />
         <Winner />
         <ListCard cards={appCards?.cards} />
         <Marquee />

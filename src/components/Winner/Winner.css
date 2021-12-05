@@ -107,14 +107,14 @@
   padding: 1rem 0;
   white-space: nowrap;
   transform: translateX(-10%);
-  animation: marquee 80s infinite linear;
+  animation: marquee 500s infinite linear;
 }
 @keyframes marquee {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-60%);
+    transform: translateX(-80%);
   }
 }
 

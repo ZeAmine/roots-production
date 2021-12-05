@@ -21,10 +21,10 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--clr-primary-2);
+  transition: background-color 200ms ease-out;
 }
 
 .button_connect:hover {
-  transition-duration: 450ms;
   background-color: #fa7921;
 }
 

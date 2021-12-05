@@ -137,7 +137,13 @@ const Winner = () => {
           <div className="winner__band">
             <div className="winner_band_container">
               <h3 data-text="LE VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE •">
-                LE VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE •
+                LE VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE • LE
+                VAINQUEUR DE LA SEMAINE • LE VAINQUEUR DE LA SEMAINE •
               </h3>
             </div>
           </div>
@@ -145,13 +151,13 @@ const Winner = () => {
         <button className="winner__scroll">
           <a href="#ListCard">
             <span className="winner_scroll_container">
-                <span className="winner_scroll_text">Votez pour le prochain</span>
-                <div className="winner_scroll_img">
-                  <img
-                    src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
-                    alt="fleche vers le bas"
-                  />
-                </div>
+              <span className="winner_scroll_text">Votez pour le prochain</span>
+              <div className="winner_scroll_img">
+                <img
+                  src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
+                  alt="fleche vers le bas"
+                />
+              </div>
             </span>
           </a>
         </button>

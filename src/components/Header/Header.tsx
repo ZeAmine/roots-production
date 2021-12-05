@@ -10,11 +10,14 @@ const Header = () => {
           alt="logo root"
         />
       </a>
-      <div className="login_button">
-        <a href="#" className="button_connect">
-          Se connecter
-        </a>
-      </div>
+      <a
+        href="https://roots.tinker.ovh/oauth"
+        target="_blank"
+        rel="noreferrer"
+        className="button_connect"
+      >
+        <div className="login_button">Se connecter</div>
+      </a>
     </div>
   );
 };

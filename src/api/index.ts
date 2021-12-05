@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "src/axios";
 import { ICards } from "../decl";
 
 export const getCards = async (): Promise<ICards> => {

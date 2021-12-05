@@ -1,5 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Artist from "./pages/Artist/Artist";
 import Footer from "./components/Footer/Footer";
@@ -14,9 +17,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Artiste" element={<Artist />} />
-        <Route path="/Politique" element={<Cookies_Politics />} />
-        <Route path="/Mention-legal" element={<Legal_Mention />} />
+        <Route path="/artiste" element={<Artist />} />
+        <Route path="/politiques" element={<Cookies_Politics />} />
+        <Route path="/mentions-legales" element={<Legal_Mention />} />
+        <Route path="/user" element={<Legal_Mention />} />
       </Routes>
       <Footer />
     </Router>

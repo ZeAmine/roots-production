@@ -24,11 +24,11 @@ const Footer = () => {
           <div className="footer__links">
             <h4>À PROPOS</h4>
             <ul className="footer_links_list">
-                <li className="footer_links_item">
-                  <a href="/">Mentions légales</a>
-                </li>
               <li className="footer_links_item">
-                <a href="/">Politique</a>
+                <Link to="/mentions-legales">Mentions légales</Link>
+              </li>
+              <li className="footer_links_item">
+                <Link to="/politiques">Politique</Link>
               </li>
               <li className="footer_links_item">
                 <a href="/">CGU</a>
@@ -45,16 +45,15 @@ const Footer = () => {
             {/* <Link to="#"> */}
             <a href="#Welcome">
               <button className="footer__btn">
-                  <div className="footer_btn_container_img">
-                    <img
-                      src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
-                      alt="arrow"
-                      className="footer_btn_img"
-                    />
-                  </div>
+                <div className="footer_btn_container_img">
+                  <img
+                    src={process.env.PUBLIC_URL + "assets/icons/arrow_down.svg"}
+                    alt="arrow"
+                    className="footer_btn_img"
+                  />
+                </div>
               </button>
             </a>
-            {/* </Link> */}
           </div>
         </div>
         <div className="footer__end">

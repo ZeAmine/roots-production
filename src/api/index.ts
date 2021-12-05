@@ -1,32 +1,19 @@
 import axios from "axios";
-import { ICards, IUser } from "../decl";
-
-// export const getCards = async (): Promise<ICards> => {
-//   try {
-//     const res = await axios.get(`${process.env.REACT_APP_BASE_URL2}/data.json`);
-//     return res.data;
-//   } catch (error) {
-//     console.error("error", error);
-//     return { title: "fail", items: [], urlSuffixe: "http://error" };
-//   }
-// };
+import { ICards, IUser, IVote } from "../decl";
 
 const tokenURL = window.location.href;
 const accessToken = tokenURL.substring(29);
 localStorage.setItem("userToken", accessToken == null ? "error" : accessToken);
 
-console.log("token: " + accessToken);
+const params = { id: "1DgBVE3lCnC7Osg9zpAt6N" };
 
 export const getUserInfos = async (): Promise<IUser> => {
   try {
-    const res = await axios.get(
-      `${process.env.REACT_APP_BASE_URL}/getUserInfos`,
-      {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
-      }
-    );
+    const res = await axios.get(`https://roots.tinker.ovh/getUserInfos`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
     return res.data;
   } catch (error) {
     console.error("error", error);
@@ -40,15 +27,40 @@ export const getUserInfos = async (): Promise<IUser> => {
   }
 };
 
-//
-// const [authTokens, setAuthTokens] = useState<string | null>(() =>
-//     localStorage.getItem("authToken")
-//         ? JSON.parse(<string>localStorage.getItem("authToken"))
-//         : null
-// );
-//
-// const [user, setUser] = useState<string | null>(() =>
-//     localStorage.getItem("authToken")
-//         ? jwtDecode(<string>localStorage.getItem("authToken"))
-//         : null
-// );
+export const getVote = async (): Promise<IVote> => {
+  try {
+    const res = await axios.put(`https://roots.tinker.ovh/vote`, params, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    return res.data;
+  } catch (error) {
+    console.error("error", error);
+    return { vote: "fail" };
+  }
+};
+
+export const getArtist = async (): Promise<IVote> => {
+  try {
+    const res = await axios.put(`https://roots.tinker.ovh/getArtist`, params, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    return res.data;
+  } catch (error) {
+    console.error("error", error);
+    return { vote: "fail" };
+  }
+};
+
+// export const getCards = async (): Promise<ICards> => {
+//   try {
+//     const res = await axios.get(`${process.env.REACT_APP_BASE_URL2}/data.json`);
+//     return res.data;
+//   } catch (error) {
+//     console.error("error", error);
+//     return { title: "fail", items: [], urlSuffixe: "http://error" };
+//   }
+// };

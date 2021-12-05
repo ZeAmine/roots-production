@@ -2,6 +2,9 @@
   position: relative;
   width: 100%;
   height: 98vh;
+  display: flex;
+  place-content: center;
+  place-items: center;
 }
 
 .pres:after {
@@ -21,13 +24,14 @@
 .pres__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.women-picture {
+.pres_img_container {
   width: 30vw;
+  height: auto;
 }
 
 .text-explanation h3 {

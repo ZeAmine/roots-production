@@ -21,9 +21,7 @@ const Welcome = () => {
               <span>Propulsez</span>
             </div>
             <div className="artist-text">
-              <span>
-                votre <span className="white-text">artiste</span>
-              </span>
+              <span>votre <span className="text-stroke">artiste</span></span>
             </div>
             <div className="favorite-text">
               <span>préféré</span>

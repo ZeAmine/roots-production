@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { ICardItem } from "../../decl";
-import "./Card.css";
+import { IArtist, ICardItem } from "../../decl";
 import { Link } from "react-router-dom";
+import "./Card.css";
 
 export interface CardsProps {
-  cardItem: ICardItem;
-  urlSuffixe: string;
+  artistItem: IArtist;
+  artistImgUrl: string;
 }
 
-const Card = ({ cardItem, urlSuffixe }: CardsProps) => {
-  const { id, img, gender, name } = cardItem;
+const Card = ({ artistItem, artistImgUrl }: CardsProps) => {
+  const { artistVotes, artistName } = artistItem;
 
   const [likeActive, setLikeActive] = useState<boolean>(false);
   const [slideBtnLike, setSlideBtnLike] = useState<boolean>(false);
@@ -78,18 +78,15 @@ const Card = ({ cardItem, urlSuffixe }: CardsProps) => {
           {showBtn && (
             <div className="card__gender">
               <div className="card_gender_container">
-                <p>{gender}</p>
+                <p>GENDER</p>
               </div>
             </div>
           )}
           <div className="card__name">
-            <h4>{name}</h4>
+            <h4>{artistName}</h4>
           </div>
           <div className="card__image">
-            <img
-              src={process.env.PUBLIC_URL + `${urlSuffixe}${img}`}
-              alt="card"
-            />
+            <img src={artistImgUrl} alt="artiste image" />
           </div>
         </div>
       </article>

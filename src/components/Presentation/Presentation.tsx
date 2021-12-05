@@ -1,26 +1,17 @@
 import React from "react";
 import "./Presentation.css";
-import Tilt from "react-parallax-tilt";
 
 const Presentation = () => {
   return (
     <section id="pres" className="section pres">
       <div className="pres__wrap container">
-        <Tilt
-          className="track-on-window"
-          perspective={500}
-          scale={1.0}
-          tiltMaxAngleX={4}
-          tiltMaxAngleY={4}
-          trackOnWindow={true}
-        >
+        <div className="pres_img_container">
           <img
             src={process.env.PUBLIC_URL + "assets/imgs/purple_women.png"}
             alt="Women picture"
             className="women-picture"
           />
-        </Tilt>
-
+        </div>
         <div className="text-explanation">
           <h3>
             Permettez à la nouvelle étoile montante de la musique de se
@@ -29,9 +20,9 @@ const Presentation = () => {
           <div className="explanation">
             <p>
               Chaque semaine, le vainqueur de notre concours
-              <strong>ROOTS®</strong> sera mis en avant sur nos différents
-              réseaux ainsi que sur ceux de nos partenaires officiels,
-              <strong>Spotify</strong>, <strong>RTL</strong> ainsi que
+              <strong> ROOTS®</strong> sera mis en avant sur nos différents
+              réseaux ainsi que sur ceux de nos partenaires officiels:
+              <strong> Spotify</strong>, <strong>RTL</strong> ainsi que
               <strong> Wagram Music.</strong>
             </p>
 

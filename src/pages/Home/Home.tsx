@@ -5,33 +5,42 @@ import Winner from "../../components/Winner/Winner";
 import ListCard from "../../components/ListCard/ListCard";
 import Marquee from "../../components/Marquee/Marquee";
 import Newsletter from "../../components/Newsletter/Newsletter";
-import { getUserInfos } from "../../api";
-import { ICards, IUser } from "../../decl";
+import { getUserInfos, getVote } from "../../api";
+import { ICards, IUser, IVote } from "../../decl";
 import "./Home.css";
 
 interface AppState {
-  // cards: ICards | undefined;
+  cards: ICards | undefined;
   user: IUser | any;
+  vote: IVote | undefined;
 }
 
 const Home = () => {
-  // const [appCards, setAppCards] = useState<AppState["cards"]>();
-  const [user, setUser] = useState<AppState["user"]>();
+  const [appCards, setAppCards] = useState<AppState["cards"]>();
+  const [appUser, setAppUser] = useState<AppState["user"]>();
+  const [appVote, setAppVote] = useState<AppState["vote"]>();
 
   // const fetchCards = async () => {
   //   const cardsPages = await getCards();
   //   setAppCards({ cards: cardsPages });
   // };
-  console.log(user);
+
+  const fetchUser = async () => {
+    const userPage = await getUserInfos();
+    setAppUser({ user: userPage });
+    // console.log(userPage);
+  };
+
+  const fetchVote = async () => {
+    const votePage = await getVote();
+    setAppVote({ vote: votePage });
+    // console.log(votePage);
+  };
 
   useEffect(() => {
     // fetchCards();
-    const fetchUser = async () => {
-      const userPage = await getUserInfos();
-      setUser({ user: userPage });
-      // console.log(userPage);
-    };
     fetchUser();
+    fetchVote();
   }, []);
 
   return (
@@ -39,8 +48,8 @@ const Home = () => {
       <div className="home__wrap">
         <Welcome />
         <Presentation />
-        <Winner />
-        {/*<ListCard cards={appCards?.cards} />*/}
+        <Winner />s{/*<ListCard cards={appCards?.cards} />*/}
+        <ListCard />
         <Marquee />
         <Newsletter />
       </div>

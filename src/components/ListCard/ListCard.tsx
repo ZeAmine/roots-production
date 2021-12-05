@@ -1,27 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
-import { ICardItem, ICards } from "../../decl";
+import { IArtist, ICardItem, ICards } from "../../decl";
 import "./ListCard.css";
+import { getArtist } from "../../api";
 
-export interface CardsProps {
-  cards: ICards | undefined;
+interface CardsState {
+  // cards: ICards | undefined;
+  artist: IArtist | any;
 }
 
-const ListCard = ({ cards }: CardsProps) => {
+const ListCard = () => {
+  const [appArtist, setAppArtist] = useState<CardsState["artist"]>();
+
+  const fetchArtist = async () => {
+    const artistPage = await getArtist();
+    setAppArtist({ artist: artistPage });
+    // console.log(artistPage);
+  };
+
+  useEffect(() => {
+    fetchArtist();
+  }, []);
+
   return (
-    <section id="ListCard"className="section cards__list">
+    <section id="ListCard" className="section cards__list">
       <div className="cards_list_wrap container">
         <div className="section__title">
-          <h1>{cards?.title}</h1>
+          <h1>CHALLENGER</h1>
         </div>
         <div className="cards_list_block">
           <div className="cards_list_container">
-            {cards?.items.map((card: ICardItem) => {
+            {appArtist?.artist.map((artist: IArtist) => {
               return (
                 <Card
-                  key={card.id}
-                  urlSuffixe={cards?.urlSuffixe}
-                  cardItem={card}
+                  key={artist.artistId}
+                  artistImgUrl={artist.artistImgUrl}
+                  artistItem={artist}
                 />
               );
             })}

@@ -5,7 +5,7 @@
   place-content: center;
   place-items: center;
   width: 100%;
-  height: 69vh;
+  height: 42vw;
   border-top: 3px solid var(--clr-primary-2);
   border-bottom: 3px solid var(--clr-primary-2);
   overflow: hidden;
@@ -150,19 +150,19 @@
 
 .cercle__btn.spotify {
   position: absolute;
-  top: 24%;
-  right: 20%;
+  top: 10vw;
+  right: 16vw;
 }
 
 .cercle__btn.instagram {
   position: absolute;
-  top: 35%;
-  right: 20%;
+  top: 16vw;
+  right: 16vw;
 }
 
 .cercle_btn_container.instagram,
 .cercle_btn_container.spotify {
-  width: 22px;
+  width: 30px;
   height: auto;
 }
 
@@ -191,7 +191,86 @@
 }
 
 .winner_scroll_img {
-  width: 24px;
-  height: 24px;
+  width: 2vw;
+  height: 2vw;
   transform: translateY(-2px);
+}
+
+/*-------Medias*/
+
+
+@media (max-width: 1400px) {
+  .winner_block_name {
+    margin-top: 2rem;
+  }
+  .winner__name {
+    font-size: 8rem;
+    line-height: 6rem;
+  }
+  .winner_band_container h3 {
+    font-size: 2.7rem;
+  }
+  .winner_scroll_text{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .winner_block_name {
+    margin-top: 1rem;
+  }
+  .winner__name {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+
+  .winner_band_container h3 {
+    font-size: 2.5rem;
+  }
+  .winner_scroll_text{
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .winner_block_name {
+    margin-top: 0rem;
+  }
+  .winner__name {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .winner_band_container h3 {
+    font-size: 2rem;
+  }
+  .winner_scroll_text{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .winner__name {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .winner_band_container h3 {
+    font-size: 1.7rem;
+  }
+  .winner_scroll_text{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .winner__name {
+    font-size: 4rem;
+    line-height: 3.2rem;
+  }
+  .winner_band_container h3 {
+    font-size: 1.3rem;
+  }
+  .winner_scroll_text{
+    font-size: 1rem;
+  }
 }

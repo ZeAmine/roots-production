@@ -91,3 +91,37 @@
   color: var(--clr-primary-2);
   line-height: 8rem;
 }
+
+@media (max-width: 1400px) {
+  .marquee__text h3{
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+@media (max-width: 1300px) {
+  .marquee__text h3{
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .marquee__text h3{
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .marquee__text h3{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .marquee__text h3{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

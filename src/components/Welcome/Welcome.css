@@ -34,12 +34,12 @@
 
 .title_artist span:not(.text-stroke) {
   padding: 1rem 1.5rem 6px;
-  background-color: var(--clr-bg-2);
+  background-color: var(--clr-primary-3);
   border: 3px solid var(--clr-primary-2);
 }
 
 .text-stroke {
-  color: var(--clr-bg-2);
+  color: var(--clr-primary-3);
   -webkit-text-stroke: 3px var(--clr-primary-2);
 }
 
@@ -174,5 +174,10 @@
 @media (max-width: 1000px) {
   .title_artist {
     font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .title_artist {
+  	font-size: 2rem;
   }
 }

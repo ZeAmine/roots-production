@@ -22,16 +22,16 @@
   text-transform: uppercase;
 }
 
-.text_content {
-  margin-top: 30px;
-  padding: 30px;
-  width: 750px;
-  font-family: var(--font-primary-1);
-  font-size: 1.1rem;
-  line-height: 25px;
-  background-color: #f4f4f4;
-  border: solid 2px #000000;
-  z-index: 2;
+.text_content{
+    margin-top: 30px;
+    padding:30px;
+    width: 60vw;
+    font-family: var(--font-primary-1);
+    font-size: 1.1rem;
+    line-height: 25px;
+    background-color: #f4f4f4;
+    border: solid 2px #000000;
+    z-index: 2;
 }
 
 .horizontal_arrow {
@@ -44,4 +44,16 @@
   left: 0;
   bottom: -390px;
   z-index: 0;
+}
+
+@media (max-width: 1220px) {
+    .backgroundPurple h2 {
+        font-size: 4rem;
+      }
+  }
+  
+@media (max-width: 1000px) {
+.backgroundPurple h2 {
+    font-size: 3.8rem;
+    }
 }

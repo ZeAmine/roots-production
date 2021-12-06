@@ -11,7 +11,7 @@
   display: flex;
   flex-flow: row nowrap;
   place-items: flex-start;
-  width: 105vh;
+  width: 62.5vw;
   height: 100%;
   border: 3px solid var(--clr-primary-2);
   background-color: var(--clr-primary-3);
@@ -19,7 +19,7 @@
 
 /*----------TRACK_POSTER*/
 .artist_track_poster {
-  width: 152px;
+  width: 15vw;
   height: 100%;
   border-right: 3px solid var(--clr-primary-2);
 }
@@ -118,4 +118,10 @@
   width: 50%;
   height: 100%;
   background-color: var(--clr-primary-2);
+}
+
+@media (max-width: 1450px) {
+  .artist_track_poster  {
+   display:none;
+  }
 }

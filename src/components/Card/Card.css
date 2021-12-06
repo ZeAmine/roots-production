@@ -1,8 +1,8 @@
 .card {
   position: relative;
   display: flex;
-  width: 320px;
-  height: 470px;
+  width: 285px;
+  height: 420px;
   margin-bottom: 1.875rem;
   overflow: hidden;
 }
@@ -11,15 +11,16 @@
   display: flex;
   flex-flow: column nowrap;
   place-content: flex-end;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: auto;
   border: 3px solid black;
+  overflow: hidden;
 }
 
 .card__image {
   position: absolute;
-  bottom: 20px;
-  left: 0;
+  top: 0;
+  right: -65px;
   display: flex;
   place-content: center;
   place-items: center;
@@ -103,4 +104,13 @@
 .cercle_btn_container.card_save {
   width: 18px;
   height: auto;
+}
+
+.card__redirect {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  /*background-color: red;*/
 }

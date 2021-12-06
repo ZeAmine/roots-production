@@ -21,7 +21,9 @@ const ArtistInfo = () => {
           <button
             className="cercle__btn artist_like"
             style={{
-              backgroundColor: likeActive ? "var(--clr-primary-1" : "var(--clr-primary-3)",
+              backgroundColor: likeActive
+                ? "var(--clr-primary-1"
+                : "var(--clr-primary-3)",
               width: slideBtnLike ? "120px" : "60px",
             }}
             onClick={() => setLikeActive(!likeActive)}
@@ -45,7 +47,9 @@ const ArtistInfo = () => {
             <button
               className="cercle__btn artist_save"
               style={{
-                backgroundColor: saveActive ? "var(--clr-primary-1" : "var(--clr-primary-3)",
+                backgroundColor: saveActive
+                  ? "var(--clr-primary-1"
+                  : "var(--clr-primary-3)",
                 width: slideBtnSave ? "150px" : "60px",
               }}
               onClick={() => setSaveActive(!saveActive)}

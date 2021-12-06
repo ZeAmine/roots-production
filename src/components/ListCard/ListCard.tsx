@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
-import { IArtist, ICardItem, ICards } from "../../decl";
-import "./ListCard.css";
+import { IArtists } from "../../decl";
 import { getArtist } from "../../api";
+import "./ListCard.css";
 
 interface CardsState {
-  // cards: ICards | undefined;
-  artist: IArtist | any;
+  artists: IArtists | any;
 }
 
 const ListCard = () => {
@@ -14,12 +13,15 @@ const ListCard = () => {
 
   const fetchArtist = async () => {
     const artistPage = await getArtist();
-    setAppArtist({ artist: artistPage });
+    setAppArtist({ artists: artistPage });
+    console.log(artistPage);
   };
 
   useEffect(() => {
     fetchArtist();
   }, []);
+
+  console.log(appArtist);
 
   return (
     <section id="ListCard" className="section cards__list">
@@ -29,9 +31,69 @@ const ListCard = () => {
         </div>
         <div className="cards_list_block">
           <div className="cards_list_container">
-            {appArtist?.artist.map((artist: IArtist) => {
-              return <Card key={artist.artistId} artistItem={artist} />;
-            })}
+            {/*{appArtist?.artists?.map((artist: IArtist) => {*/}
+            {/*  return <Card key={artist.artistId} artistItem={artist} />;*/}
+            {/*})}*/}
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="MAD"
+              artistImageUrl="MAD.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Alexia Gredy"
+              artistImageUrl="Alexia.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Rosi"
+              artistImageUrl="Rosi.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="YISVS"
+              artistImageUrl="YISVS.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Telemona"
+              artistImageUrl="Telemona.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="T2ITS"
+              artistImageUrl="T2ITS.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Delorians"
+              artistImageUrl="Delorians.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="The Dunwells"
+              artistImageUrl="The_Dunwells.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Geminibull"
+              artistImageUrl="Geminibull.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
+            <Card
+              artistId={appArtist?.artists?.artistId}
+              artistName="Colzani"
+              artistImageUrl="Colzani.png"
+              artistVotes={appArtist?.artists?.artistVotes}
+            />
           </div>
         </div>
       </div>

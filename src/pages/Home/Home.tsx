@@ -5,13 +5,12 @@ import Winner from "../../components/Winner/Winner";
 import ListCard from "../../components/ListCard/ListCard";
 import Marquee from "../../components/Marquee/Marquee";
 import Newsletter from "../../components/Newsletter/Newsletter";
-import { getVote } from "../../api";
-import { ICards, IVote } from "../../decl";
-import "./Home.css";
 import OpeningScreen from "../../components/OpeningScreen/OpeningScreen";
+import { getVote } from "../../api";
+import { IVote } from "../../decl";
+import "./Home.css";
 
 interface HomeState {
-  cards: ICards | undefined;
   vote: IVote | undefined;
 }
 
@@ -20,13 +19,7 @@ interface HomeProps {
 }
 
 const Home = ({ auth }: HomeProps) => {
-  const [appCards, setAppCards] = useState<HomeState["cards"]>();
   const [appVote, setAppVote] = useState<HomeState["vote"]>();
-
-  // const fetchCards = async () => {
-  //   const cardsPages = await getCards();
-  //   setAppCards({ cards: cardsPages });
-  // };
 
   const fetchVote = async () => {
     const votePage = await getVote();
@@ -34,7 +27,6 @@ const Home = ({ auth }: HomeProps) => {
   };
 
   useEffect(() => {
-    // fetchCards();
     fetchVote();
   }, []);
 

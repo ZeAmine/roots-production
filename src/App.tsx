@@ -11,13 +11,8 @@ import Cookies_Politics from "./components/Cookies_Politics/Cookies_Politics";
 import Legal_Mention from "./components/Legal_Mention/Legal_Mention";
 import CGU from "./components/CGU/CGU";
 import { useEffect, useState } from "react";
-import { accessToken, getUserInfos } from "./api";
+import { accessToken } from "./api";
 import "./App.css";
-import { IUser } from "./decl";
-
-interface AppState {
-  user: IUser | any;
-}
 
 const App = () => {
   const [auth, setAuth] = useState<boolean>(false);
@@ -30,21 +25,13 @@ const App = () => {
     }
   };
 
-  const [appUser, setAppUser] = useState<AppState>();
-
-  const fetchUser = async () => {
-    const userPage = await getUserInfos();
-    setAppUser({ user: userPage });
-  };
-
   useEffect(() => {
     CheckAuth();
-    fetchUser();
-  }, []);
+  });
 
   return (
     <Router>
-      <Header appUser={appUser?.user} />
+      {auth && <Header />}
       <Routes>
         <Route path="/" element={<Home auth={auth} />} />
         <Route path="/artiste" element={<Artist />} />

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ICards, IUser, IVote, IArtist } from "../decl";
+import { IUser, IVote, IArtist } from "../decl";
 
 const tokenURL = window.location.href;
 export const accessToken = tokenURL.substring(29);
@@ -14,7 +14,7 @@ export const getUserInfos = async (): Promise<IUser> => {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-    return res.data;
+    return res.data[0];
   } catch (error) {
     console.error("error", error);
     return {
@@ -48,27 +48,17 @@ export const getArtist = async (): Promise<IArtist> => {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-    return res.data;
+    return res.data[0];
   } catch (error) {
     console.error("error", error);
     return {
       id: 0,
       artistId: "fail",
       artistName: "fail",
-      artistImgUrl: "fail",
+      artistImageUrl: "fail",
       artistFollowers: 0,
       artistPopularity: 0,
       artistVotes: 0,
     };
   }
 };
-
-// export const getCards = async (): Promise<ICards> => {
-//   try {
-//     const res = await axios.get(`${process.env.REACT_APP_BASE_URL2}/data.json`);
-//     return res.data;
-//   } catch (error) {
-//     console.error("error", error);
-//     return { title: "fail", items: [], urlSuffixe: "http://error" };
-//   }
-// };

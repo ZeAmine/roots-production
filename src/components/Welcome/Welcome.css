@@ -80,7 +80,6 @@
   width: 13vw;
 }
 
-
 /* Parallax */
 
 .parallax-effect-img {
@@ -153,19 +152,19 @@
 
 @media (max-width: 1680px) {
   .title_artist {
-  	font-size: 6rem;
+    font-size: 6rem;
   }
 }
 
 @media (max-width: 1300px) {
   .title_artist {
-  	font-size: 4.5rem;
+    font-size: 4.5rem;
   }
 }
 
 @media (max-width: 1220px) {
   .title_artist {
-  	font-size: 3.5rem;
+    font-size: 3.5rem;
   }
   .welcome__btn {
     border: 2px solid var(--clr-primary-2);
@@ -174,7 +173,6 @@
 
 @media (max-width: 1000px) {
   .title_artist {
-  	font-size: 3rem;
+    font-size: 3rem;
   }
 }
-

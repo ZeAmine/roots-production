@@ -1,14 +1,14 @@
-.backgroundPurpleCGU{
-    padding-top: 30px;
-    background-color: #8185DC;
-    height:514vh;
-    display: flex;
-    justify-content: center;
+.backgroundPurpleCGU {
+  padding-top: 30px;
+  background-color: #8185dc;
+  height: 514vh;
+  display: flex;
+  justify-content: center;
 }
 
-.backgroundPurpleCGU h2{
-    width:745px;
-    font-family: var(--font-primary-2);
-    font-size: 4rem;
-    text-transform:uppercase
+.backgroundPurpleCGU h2 {
+  width: 745px;
+  font-family: var(--font-primary-2);
+  font-size: 4rem;
+  text-transform: uppercase;
 }

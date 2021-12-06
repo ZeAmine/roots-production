@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { IUser } from "../../decl";
+import { getUserInfos } from "../../api";
 import "./Header.css";
 
-interface HeaderProps {
-  appUser: IUser | undefined;
-}
+export type HeaderState = {
+  user: IUser | undefined;
+};
 
-const Header = ({ appUser }: HeaderProps) => {
+const Header = () => {
+  const [appUser, setAppUser] = useState<HeaderState>();
+
+  const fetchUser = async () => {
+    const userPage = await getUserInfos();
+    setAppUser({ user: userPage });
+  };
+
+  useEffect(() => {
+    fetchUser();
+  }, []);
+
   return (
     <div className="header">
       <Link to="/">
@@ -19,11 +31,15 @@ const Header = ({ appUser }: HeaderProps) => {
         </div>
       </Link>
       <div className="header_btn_profil">
-        <div className="header_btn_img">
-          <img src={appUser?.userImageUrl} alt="photo de profil" />
+        <div className="header_btn_img_container">
+          <img
+            src={appUser?.user?.userImageUrl}
+            alt="photo de profil"
+            className="header_btn_img"
+          />
         </div>
         <div className="header_btn_name">
-          <span>{appUser?.username}</span>
+          <span>{appUser?.user?.username}</span>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@
 }
 
 .footer__links h4 {
-  font-family: "Clash Grotesk", sans-serif;
+  font-family: var(--font-primary-3);
   font-size: 5rem;
   font-weight: 600;
   color: black;

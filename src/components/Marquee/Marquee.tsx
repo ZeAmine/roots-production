@@ -9,15 +9,15 @@ const Marquee = () => {
           <span className="marquee__text normal_X2">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
           <span className="marquee__text normal_X2">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
         </div>
@@ -25,15 +25,15 @@ const Marquee = () => {
           <span className="marquee__text reverse_X2">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
           <span className="marquee__text reverse_X2">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
         </div>
@@ -41,15 +41,15 @@ const Marquee = () => {
           <span className="marquee__text">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
           <span className="marquee__text">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
         </div>
@@ -57,15 +57,15 @@ const Marquee = () => {
           <span className="marquee__text reverse">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
           <span className="marquee__text reverse">
             <h3>
               • ROOTS • ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS
-              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS ROOTS
-              • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
+              ROOTS • ROOTS • ROOTS ROOTS • ROOTS • ROOTS • ROOTS • ROOTS •
             </h3>
           </span>
         </div>

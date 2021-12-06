@@ -85,7 +85,7 @@
 }
 
 .marquee__text h3 {
-  font-family: "Clash Grotesk", sans-serif;
+  font-family: var(--font-primary-3);
   font-size: 8rem;
   font-weight: 700;
   color: var(--clr-primary-2);

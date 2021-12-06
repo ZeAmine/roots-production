@@ -56,7 +56,7 @@
 }
 
 .artist_track_top h3 {
-  font-family: "Clash Grotesk", sans-serif;
+  font-family: var(--clr-primary-2);
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--clr-primary-2);
@@ -73,7 +73,7 @@
 }
 
 .artist_track_title h3 {
-  font-family: "Clash Grotesk", sans-serif;
+  font-family: var(--clr-primary-2);
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--clr-primary-2);
@@ -99,6 +99,7 @@
 }
 
 .artist_track_number span {
+  font-family: var(--clr-primary-1);
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--clr-primary-2);

@@ -14,7 +14,6 @@ const ListCard = () => {
   const fetchArtist = async () => {
     const artistPage = await getArtist();
     setAppArtist({ artists: artistPage });
-    console.log(artistPage);
   };
 
   useEffect(() => {

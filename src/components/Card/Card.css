@@ -17,6 +17,11 @@
   overflow: hidden;
 }
 
+.card__vote {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .card__image {
   position: absolute;
   top: 0;
@@ -112,5 +117,4 @@
   left: 0;
   width: 300px;
   height: 300px;
-  /*background-color: red;*/
 }

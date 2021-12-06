@@ -5,7 +5,7 @@ const tokenURL = window.location.href;
 export const accessToken = tokenURL.substring(29);
 localStorage.setItem("userToken", accessToken == null ? "error" : accessToken);
 
-const params = { id: "1DgBVE3lCnC7Osg9zpAt6N" };
+const params = { id: "4y0ipLdZi2Vl560XOzRbie" };
 
 export const getUserInfos = async (): Promise<IUser> => {
   try {
@@ -34,7 +34,21 @@ export const getVote = async (): Promise<IVote> => {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-    return res.data;
+    return res.data[0];
+  } catch (error) {
+    console.error("error", error);
+    return { vote: "fail" };
+  }
+};
+
+export const getVoteCancel = async (): Promise<IVote> => {
+  try {
+    const res = await axios.put(`https://roots.tinker.ovh/vote`, params, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    return res.data[0];
   } catch (error) {
     console.error("error", error);
     return { vote: "fail" };

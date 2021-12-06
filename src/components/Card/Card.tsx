@@ -1,7 +1,12 @@
-import React, { useState } from "react";
-import { IArtist } from "../../decl";
+import React, { useEffect, useState } from "react";
+import { IVote } from "../../decl";
 import { Link } from "react-router-dom";
+import { getVote } from "../../api";
 import "./Card.css";
+
+export type CardsState = {
+  vote: IVote | undefined;
+};
 
 export type CardsProps = {
   artistId: string;
@@ -23,6 +28,37 @@ const Card = ({
   const [showBtn, setShowBtn] = useState<boolean>(false);
   const [IdArtist, setSetIdArtist] = useState<string>("");
 
+  const [appVote, setAppVote] = useState<CardsState["vote"]>();
+  const [appVoteCancel, setAppVoteCancel] = useState<CardsState["vote"]>();
+  const [viewVote, setSetViewVote] = useState<boolean>(false);
+
+  const fetchVote = async () => {
+    const votePage = await getVote();
+    setAppVote({ vote: votePage });
+  };
+
+  const fetchVoteCancel = async () => {
+    const voteCancelPage = await getVote();
+    setAppVoteCancel({ vote: voteCancelPage });
+  };
+
+  useEffect(() => {
+    if (viewVote) {
+      fetchVote();
+      alert("Votre vote a ete pris en compte !");
+      console.log("Votre vote a ete pris en compte !");
+    }
+    if (!viewVote) {
+      fetchVoteCancel();
+      console.log("Votre vote a ete annulé !");
+    }
+  }, [viewVote]);
+
+  const handleClick = () => {
+    setLikeActive(!likeActive);
+    setSetViewVote(!viewVote);
+  };
+
   return (
     <article
       className="card"
@@ -42,7 +78,7 @@ const Card = ({
               : "var(--clr-primary-3)",
             width: slideBtnLike ? "120px" : "60px",
           }}
-          onClick={() => setLikeActive(!likeActive)}
+          onClick={handleClick}
           onMouseOver={() => setSlideBtnLike(true)}
           onMouseLeave={() => setSlideBtnLike(false)}
         >
@@ -89,7 +125,7 @@ const Card = ({
         {showBtn && (
           <div className="card__gender">
             <div className="card_gender_container">
-              <p>GENDER</p>
+              <p>HIP-HOP • TRAP • CLOUD RAP • RNB • DRILL</p>
             </div>
           </div>
         )}

@@ -13,9 +13,11 @@ import CGU from "./components/CGU/CGU";
 import { useEffect, useState } from "react";
 import { accessToken } from "./api";
 import "./App.css";
+import OpeningScreen from "./components/OpeningScreen/OpeningScreen";
 
 const App = () => {
   const [auth, setAuth] = useState<boolean>(false);
+  console.log(window.location.href)
 
   const CheckAuth = () => {
     if (accessToken) {
@@ -34,6 +36,7 @@ const App = () => {
       {auth && <Header />}
       <Routes>
         <Route path="/" element={<Home auth={auth} />} />
+        <Route path="/login" element={<OpeningScreen/>} />
         <Route path="/artiste" element={<Artist />} />
         <Route path="/politiques" element={<Cookies_Politics />} />
         <Route path="/mentions-legales" element={<Legal_Mention />} />

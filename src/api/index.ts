@@ -2,7 +2,7 @@ import axios from "axios";
 import { IUser, IVote, IArtist } from "../decl";
 
 const tokenURL = window.location.href;
-export const accessToken = tokenURL.substring(29);
+export const accessToken = tokenURL.substring(44);
 localStorage.setItem("userToken", accessToken == null ? "error" : accessToken);
 
 const params = { id: "4y0ipLdZi2Vl560XOzRbie" };

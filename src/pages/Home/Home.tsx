@@ -14,6 +14,10 @@ interface HomeProps {
 
 const Home = ({ auth }: HomeProps) => {
   return (
+    <>
+      {!auth ? (
+        <OpeningScreen />
+      ) : (
         <main className="home">
           <div className="home__wrap">
             <Welcome />
@@ -24,22 +28,8 @@ const Home = ({ auth }: HomeProps) => {
             <Newsletter />
           </div>
         </main>
-    // <>
-    //   {!auth ? (
-    //     <OpeningScreen />
-    //   ) : (
-    //     <main className="home">
-    //       <div className="home__wrap">
-    //         <Welcome />
-    //         <Presentation />
-    //         <Winner />
-    //         <ListCard />
-    //         <Marquee />
-    //         <Newsletter />
-    //       </div>
-    //     </main>
-    //   )}
-    // </>
+      )}
+    </>
   );
 };
 
